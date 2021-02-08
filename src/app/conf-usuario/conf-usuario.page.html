@@ -1,0 +1,37 @@
+
+
+<ion-header>
+  <ion-toolbar color="secondary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-item color="secondary">
+      <ion-title style="text-align: center  ">Confguraciones del Usuario</ion-title>
+    </ion-item>
+  </ion-toolbar>
+</ion-header>
+
+
+
+
+<ion-content>
+  <br><br><br>
+
+    <br><br><br><br><br>
+    <center>
+        <label>
+          <img src="assets/logo1.png ">
+        </label>
+      </center>
+    <ion-list>
+      <br><br><br><br><br><br><br>
+    <ion-button  type="submit" shape="round" expand="block" routerLink="/info-usuario"  style="border-radius: 50px"><ion-icon name="create-outline"></ion-icon>Editar Cuenta</ion-button>
+    <br>
+      <ion-button (click)="remover()" type="submit" shape="round" expand="block" style="border-radius: 50px"><ion-icon name="log-out-outline"></ion-icon> Cerrar Sesion</ion-button>
+  </ion-list>
+    <br>
+
+
+
+
+</ion-content>

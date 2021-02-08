@@ -1,0 +1,110 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-item>
+      <ion-icon id="user" name="person-circle-outline" slot="end" style="font-size: 50px;"></ion-icon>
+      <ion-title>Usuario 0079</ion-title>
+    </ion-item>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid style="margin-top: 20px;">
+    <ion-row>
+      <ion-col>
+        <div>Contenedor</div>
+      </ion-col>
+      <ion-col>
+        <div>Estatus</div>
+      </ion-col>
+      <ion-col>
+        <div>Eliminar</div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <div>Contenedor A</div>z
+      </ion-col>
+      <ion-col>
+        <div>
+          <ion-item>
+            <ion-toggle slot="start" name="blueberry" checked></ion-toggle>
+          </ion-item>
+        </div>
+      </ion-col>
+      <ion-col>
+        <div><ion-icon name="trash-outline" size="large" style="margin-left: 20px;"></ion-icon></div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <div>Contenedor B</div>
+      </ion-col>
+      <ion-col>
+        <div>
+          <ion-item>
+            <ion-toggle slot="start" name="blueberry"></ion-toggle>
+          </ion-item>
+        </div>
+      </ion-col>
+      <ion-col>
+        <div><ion-icon name="trash-outline" size="large" style="margin-left: 20px;"></ion-icon></div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <div>Contenedor C</div>
+      </ion-col>
+      <ion-col>
+        <div>
+          <ion-item>
+            <ion-toggle slot="start" name="blueberry" checked></ion-toggle>
+          </ion-item>
+        </div>
+      </ion-col>
+      <ion-col>
+        <div><ion-icon name="trash-outline" size="large" style="margin-left: 20px;"></ion-icon></div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <div>Contenedor D</div>
+      </ion-col>
+      <ion-col>
+        <div>
+          <ion-item>
+            <ion-toggle slot="start" name="blueberry" checked></ion-toggle>
+          </ion-item>
+        </div>
+      </ion-col>
+      <ion-col>
+        <div><ion-icon name="trash-outline" size="large" style="margin-left: 20px;"></ion-icon></div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <div>Contenedor E</div>
+      </ion-col>
+      <ion-col>
+        <div>
+          <ion-item>
+            <ion-toggle slot="start" name="blueberry"></ion-toggle>
+          </ion-item>
+        </div>
+      </ion-col>
+      <ion-col>
+        <div><ion-icon name="trash-outline" size="large" style="margin-left: 20px;"></ion-icon></div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <div (click)="onClick()">
+    <div>
+      <ion-icon name="add-circle-outline" style="font-size: 60px; margin-top: 20px; margin-left: 295px;"></ion-icon>
+    </div>
+    <div>
+      <ion-label style="margin-left: 250px;">Agregar contenedor</ion-label>
+    </div>
+  </div>
+</ion-content>

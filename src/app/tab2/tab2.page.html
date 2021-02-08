@@ -1,0 +1,184 @@
+<ion-header>
+    <ion-toolbar color="secondary">
+        <ion-title>
+            Contenedores
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+<!--
+<ion-content [fullscreen]="true">
+  <ion-grid id="tabla" style="margin-top: 20px;">
+    <ion-row>
+      <ion-col >
+        <div></div>
+      </ion-col>
+      <ion-col>
+        <div>Energía consumida</div>
+      </ion-col>
+      <ion-col>
+        <div>Lamparás conectadas</div>
+      </ion-col>
+      <ion-col>
+        <div>Encendido/ Apagado</div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col routerLink="/detalle-contenedor">
+        <div>Contenedor A</div>
+      </ion-col>
+      <ion-col>
+        <div>
+          <ion-progress-bar value="0.5" style="margin-top: 20px;"></ion-progress-bar>
+        </div>
+      </ion-col>
+      <ion-col>
+        <div style="text-align: center;">5</div>
+      </ion-col>
+      <ion-col>
+        <div>
+          <ion-item>
+            <ion-toggle slot="start" name="blueberry" checked></ion-toggle>
+          </ion-item>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <div>Contenedor B</div>
+      </ion-col>
+      <ion-col>
+        <div>
+          <ion-progress-bar value="1" style="margin-top: 20px; color:red;"></ion-progress-bar>
+        </div>
+      </ion-col>
+      <ion-col>
+        <div style="text-align: center;">5</div>
+      </ion-col>
+      <ion-col>
+        <div>
+          <ion-item>
+            <ion-toggle slot="start" name="blueberry" checked></ion-toggle>
+          </ion-item>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <div>Contenedor C</div>
+      </ion-col>
+      <ion-col>
+        <div>
+          <ion-progress-bar value="0.6" style="margin-top: 20px;"></ion-progress-bar>
+        </div>
+      </ion-col>
+      <ion-col>
+        <div style="text-align: center;">5</div>
+      </ion-col>
+      <ion-col>
+        <div>
+          <ion-item>
+            <ion-toggle slot="start" name="blueberry" checked></ion-toggle>
+          </ion-item>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <div>Contenedor D</div>
+      </ion-col>
+      <ion-col>
+        <div>
+          <ion-progress-bar value="0.4" style="margin-top: 20px;"></ion-progress-bar>
+        </div>
+      </ion-col>
+      <ion-col>
+        <div style="text-align: center;">5</div>
+      </ion-col>
+      <ion-col>
+        <div>
+          <ion-item>
+            <ion-toggle slot="start" name="blueberry" checked></ion-toggle>
+          </ion-item>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <div>Contenedor E</div>
+      </ion-col>
+      <ion-col>
+        <div>
+          <ion-progress-bar value="0.7" style="margin-top: 20px;"></ion-progress-bar>
+        </div>
+      </ion-col>
+      <ion-col>
+        <div style="text-align: center;">4</div>
+      </ion-col>
+      <ion-col>
+        <div>
+          <ion-item>
+            <ion-toggle slot="start" name="blueberry" checked></ion-toggle>
+          </ion-item>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>-->
+
+<ion-content>
+
+    <ion-card l>
+        <ion-title style="text-align: center;color: black" >Listado de contenedores</ion-title>
+    </ion-card>
+    <ion-grid>
+        <ion-card>
+            <ion-row class="ion-align-items-start">
+                <ion-col size="3" scope="col" class="title1">Contenedor</ion-col>
+                <ion-col size="3" scope="col" class="title1">Energía consumida</ion-col>
+                <ion-col size="3" scope="col" class="title1">Lamparás conectadas</ion-col>
+                <ion-col size="3" scope="col" class="title1">Activo / Apagado</ion-col>
+            </ion-row>
+
+
+            <ion-row>
+                <ion-col>
+                    <p style="text-align: center;margin-top: 14px;margin-right: 20px"
+                            routerLink="/detalle-contenedor">54654</p>
+                </ion-col>
+                <ion-col>
+                    <ion-progress-bar class="progress" value=".25" style="margin-top: 19px"></ion-progress-bar>
+                </ion-col>
+                <ion-col>
+                    <p style="text-align: center;margin-top: 14px">5</p>
+                </ion-col>
+                <ion-col>
+                    <ion-toggle name="blueberry" checked></ion-toggle>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col><p style="text-align: center;margin-top: 14px;margin-right: 20px"
+                            routerLink="/detalle-contenedor">54654</p></ion-col>
+                <ion-col>
+                    <ion-progress-bar  class="progress1" value="0.45" style="margin-top: 19px"></ion-progress-bar>
+                </ion-col>
+                <ion-col>
+                    <p style="text-align: center;margin-top: 14px">5</p></ion-col>
+                <ion-col>
+                    <ion-toggle name="blueberry" checked></ion-toggle>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col><p style="text-align: center;margin-top: 14px;margin-right: 20px"
+                            routerLink="/detalle-contenedor">54654</p></ion-col>
+                <ion-col>
+                    <ion-progress-bar class="progress2" value="1" style="margin-top: 19px"></ion-progress-bar>
+                </ion-col>
+                <ion-col>
+                    <p style="text-align: center;margin-top: 14px">5</p></ion-col>
+                <ion-col>
+                    <ion-toggle name="blueberry" checked></ion-toggle>
+                </ion-col>
+            </ion-row>
+        </ion-card>
+    </ion-grid>
+</ion-content>

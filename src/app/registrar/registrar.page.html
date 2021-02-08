@@ -1,0 +1,71 @@
+<ion-content>
+<ion-card-header class="register">
+    <ion-label>
+        <ion-item-group style="text-align: center;color: #1a1a1a;font-size: x-large;">Registrate</ion-item-group>
+    </ion-label>
+    <form #form="ngForm" style="margin-top: 30px; margin-left: 20px;margin-right: 20px;" id="formulario">
+        <ion-item style="border-radius: 20px">
+                <ion-label position="floating">Nombre Completo</ion-label>
+                <ion-input
+                        type="text"
+                        class="form-control"
+                        name="nombrec"
+                        id="nombrec"
+                        placeholder="Nombre completo"></ion-input>
+                <ion-icon style="margin-top: 40px" name="person-circle-outline" slot="start"></ion-icon>
+            </ion-item>
+        <br>
+        <ion-item style="border-radius: 20px">
+                <ion-label position="floating">Telefono</ion-label>
+                <ion-input
+                        type="tel"
+                        class="form-control"
+                        name="telefono"
+                        id="telefono"
+                        placeholder="Telefono"></ion-input>
+                <ion-icon style="margin-top: 40px" name="call-outline" slot="start"></ion-icon>
+            </ion-item>
+        <br>
+        <ion-item style="border-radius: 20px">
+                <ion-label position="floating">Correo</ion-label>
+                <ion-input
+                        type="email"
+                        class="form-control"
+                        name="correo"
+                        id="correo"
+                        placeholder="Correo"></ion-input>
+                <ion-icon style="margin-top: 40px" name="mail-outline" slot="start"></ion-icon>
+            </ion-item>
+        <br>
+        <ion-item style="border-radius: 20px">
+                <ion-label position="floating">Contraseña</ion-label>
+                <ion-input
+                        type="password"
+                        class="form-control"
+                        name="password"
+                        id="password"
+                        placeholder="Contraseña"></ion-input>
+                <ion-icon style="margin-top: 40px" name="lock-closed-outline" slot="start"></ion-icon>
+            </ion-item>
+        <br>
+        <ion-button type="submit" shape="round" expand="block" >Registrarse</ion-button>
+        <br>
+        <ion-button type="submit" shape="round" expand="block" routerLink="/login" >Cancelar</ion-button>
+    </form>
+</ion-card-header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <ion-label>
+    <center>
+        <ion-img style="width: 250px;height: 250px" src="assets/REGISTER.png"></ion-img>
+    </center>
+</ion-label>
+
+</ion-content>

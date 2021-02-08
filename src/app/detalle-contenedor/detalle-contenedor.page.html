@@ -1,0 +1,66 @@
+<ion-header>
+    <ion-toolbar color="secondary">
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="/"></ion-back-button>
+        </ion-buttons>
+        <ion-item color="secondary">
+            <ion-title style="text-align: center  ">Contenedor A</ion-title>
+        </ion-item>
+    </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+
+    <ion-card>
+        <ion-title style="text-align: center;color: black">Detalle de contenedor</ion-title>
+    </ion-card>
+
+
+    <ion-grid>
+        <ion-card >
+            <ion-row class="ion-align-items-start">
+                <ion-col size="3" scope="col" class="col1">Lamparas</ion-col>
+                <ion-col size="3" scope="col" class="col1">Estatus</ion-col>
+                <ion-col size="3" scope="col" class="col1">Encendido / Apagado</ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col>
+                    <p>Lampara 166</p>
+                </ion-col>
+                <ion-col>
+                    <ion-toggle name="blueberry" checked></ion-toggle>
+                </ion-col>
+                <ion-col>
+                    <ion-toggle name="blueberry" checked></ion-toggle>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col>
+                    <p>Lampara 166</p>
+                </ion-col>
+                <ion-col>
+                    <ion-toggle name="blueberry" checked></ion-toggle>
+                </ion-col>
+                <ion-col>
+                    <ion-toggle name="blueberry" checked></ion-toggle>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col>
+                    <p>Lampara 166</p>
+                </ion-col>
+                <ion-col>
+                    <ion-toggle name="blueberry" checked></ion-toggle>
+                </ion-col>
+                <ion-col>
+                    <ion-toggle name="blueberry" checked></ion-toggle>
+                </ion-col>
+            </ion-row>
+            <ion-label align="end" (click)="abrirModal()" *ngIf="tipo == 'empleado'">
+                <ion-icon name="add-circle-outline"class="icon1"></ion-icon>
+                <ion-label style="margin-left: 250px;">Agregar lámpara</ion-label>
+            </ion-label>
+        </ion-card>
+    </ion-grid>
+</ion-content>

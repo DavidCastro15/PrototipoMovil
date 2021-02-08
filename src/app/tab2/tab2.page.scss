@@ -1,0 +1,21 @@
+.progress{
+  --progress-background: red;
+}
+.progress1{
+  --progress-background: yellow;
+}
+.progress2{
+  --progress-background: green;
+}
+ion-card{
+  border-top: #1eb5c6 3px solid;
+  border-left: #1eb5c6 3px solid;
+  border-right: #1eb5c6 3px solid;
+  border-bottom: #1eb5c6 3px solid;
+  border-radius: 30px;
+}
+.title1 {
+  text-align: center;
+  color: black;
+  margin-top: 10px;
+}

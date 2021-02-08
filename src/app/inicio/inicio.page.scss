@@ -1,0 +1,21 @@
+.masters {
+  background-color: green;
+}
+
+
+$colors: (
+        color3: #2b75b9,
+        primary: #000000,
+        secondary: #32db64,
+        danger:  #f53d3d,
+        light:  #f4f4f4,
+        dark:  #222,
+);
+
+ion-card{
+ border-top: #1eb5c6 3px solid;
+  border-left: #1eb5c6 2px solid;
+  border-radius: 10px;
+  border-right: #1eb5c6 2px solid;
+  border-bottom: #1eb5c6 2px solid;
+}

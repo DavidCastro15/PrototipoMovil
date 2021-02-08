@@ -1,0 +1,67 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+    <ion-title style="text-align: center">Detalles del Usuario</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <br>
+  <ion-card class="centrado" >
+    <ion-card >
+    <ion-icon style="height: 50px;width: 50px;text-align: center"  name="person-circle-outline"></ion-icon>
+  </ion-card>
+
+    <form #form="ngForm" style="margin-top: 30px; margin-left: 20px;margin-right: 20px;" id="formulario">
+      <ion-item style="border-radius: 20px">
+        <ion-label position="floating">Nombre Completo</ion-label>
+        <ion-input
+                type="text"
+                class="form-control"
+                name="nombrec"
+                id="nombrec"
+                placeholder="Nombre completo"></ion-input>
+        <ion-icon style="margin-top: 40px" name="person-circle-outline" slot="start"></ion-icon>
+      </ion-item>
+      <br>
+      <ion-item style="border-radius: 20px">
+        <ion-label position="floating">Telefono</ion-label>
+        <ion-input
+                type="tel"
+                class="form-control"
+                name="telefono"
+                id="telefono"
+                placeholder="Telefono"></ion-input>
+        <ion-icon style="margin-top: 40px" name="call-outline" slot="start"></ion-icon>
+      </ion-item>
+      <br>
+      <ion-item style="border-radius: 20px">
+        <ion-label position="floating">Correo</ion-label>
+        <ion-input
+                type="email"
+                class="form-control"
+                name="correo"
+                id="correo"
+                placeholder="Correo"></ion-input>
+        <ion-icon style="margin-top: 40px" name="mail-outline" slot="start"></ion-icon>
+      </ion-item>
+      <br>
+      <ion-item style="border-radius: 20px">
+        <ion-label position="floating">Contraseña</ion-label>
+        <ion-input
+                type="password"
+                class="form-control"
+                name="password"
+                id="password"
+                placeholder="Contraseña"></ion-input>
+        <ion-icon style="margin-top: 40px" name="lock-closed-outline" slot="start"></ion-icon>
+      </ion-item>
+      <br>
+      <ion-button type="submit" shape="round" expand="block" routerLink="/conf-usuario" >Guardar</ion-button>
+      <br>
+      <ion-button type="submit" shape="round" expand="block" routerLink="/conf-usuario" >Cancelar</ion-button>
+    </form>
+    <br>
+    <br>
+  </ion-card>
+
+</ion-content>

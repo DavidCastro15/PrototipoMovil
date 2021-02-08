@@ -1,0 +1,139 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-item color="secondary">
+      <ion-icon id="user" name="person-circle-outline" slot="end" style="font-size: 50px;"></ion-icon>
+      <ion-title style="text-align: center; margin-left: 45px;">
+        Usuarios
+      </ion-title>
+    </ion-item>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-grid style="margin-top: 20px;">
+    <ion-row>
+      <ion-col >
+        <div>No. de usuario</div>
+      </ion-col>
+      <ion-col >
+        <div>Contenedores conectados</div>
+      </ion-col>
+      <ion-col>
+        <div>Estatus</div>
+      </ion-col>
+      <ion-col>
+        <div>Eliminar</div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col routerLink="/agregar-contenedor">
+        <div>0079</div>
+      </ion-col>
+      <ion-col>
+        <div style="text-align: center;">5</div>
+      </ion-col>
+      <ion-col>
+        <div>
+          <ion-item>
+            <ion-toggle slot="start" name="blueberry" checked></ion-toggle>
+          </ion-item>
+        </div>
+      </ion-col>
+      <ion-col>
+        <ion-button (click)="eliminarAlert()">
+          <ion-icon name="trash-outline" size="large"></ion-icon>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <div>0080</div>
+      </ion-col>
+      <ion-col>
+        <div style="text-align: center;">5</div>
+      </ion-col>
+      <ion-col>
+        <div>
+          <ion-item>
+            <ion-toggle slot="start" name="blueberry"></ion-toggle>
+          </ion-item>
+        </div>
+      </ion-col>
+      <ion-col>
+        <ion-button (click)="eliminarAlert()">
+          <ion-icon name="trash-outline" size="large"></ion-icon>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <div>0081</div>
+      </ion-col>
+      <ion-col>
+        <div style="text-align: center;">5</div>
+      </ion-col>
+      <ion-col>
+        <div>
+          <ion-item>
+            <ion-toggle slot="start" name="blueberry" checked></ion-toggle>
+          </ion-item>
+        </div>
+      </ion-col>
+      <ion-col>
+        <ion-button (click)="eliminarAlert()">
+          <ion-icon name="trash-outline" size="large"></ion-icon>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <div>0082</div>
+      </ion-col>
+      <ion-col>
+        <div style="text-align: center;">5</div>
+      </ion-col>
+      <ion-col>
+        <div>
+          <ion-item>
+            <ion-toggle slot="start" name="blueberry" checked></ion-toggle>
+          </ion-item>
+        </div>
+      </ion-col>
+      <ion-col>
+        <ion-button (click)="eliminarAlert()">
+          <ion-icon name="trash-outline" size="large"></ion-icon>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <div>0083</div>
+      </ion-col>
+      <ion-col>
+        <div style="text-align: center;">5</div>
+      </ion-col>
+      <ion-col>
+        <div>
+          <ion-item>
+            <ion-toggle slot="start" name="blueberry"></ion-toggle>
+          </ion-item>
+        </div>
+      </ion-col>
+      <ion-col>
+        <ion-button (click)="eliminarAlert()">
+          <ion-icon name="trash-outline" size="large"></ion-icon>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <div routerLink="/agregar-usuario">
+    <div>
+      <ion-icon name="add-circle-outline" style="font-size: 60px; margin-top: 20px; margin-left: 280px;"></ion-icon>
+    </div>
+    <div>
+      <ion-label style="margin-left: 250px;">Agregar usuario</ion-label>
+    </div>
+  </div>
+</ion-content>
+
+

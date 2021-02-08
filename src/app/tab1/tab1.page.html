@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+    <ion-title>Estadisticas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <br>
+  <ion-item class="filter">
+    <ion-label>Filtrar</ion-label>
+    <ion-datetime displayFormat="MM DD YY" placeholder="__/__/__"></ion-datetime>
+    <ion-icon name="calendar-outline" style="margin-left: 5px;"></ion-icon>
+  </ion-item>
+  <ion-card>
+      <ion-card-content>
+        <canvas id="chart-horizontal"></canvas>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-card-content>
+        <canvas id="chart"></canvas>
+      </ion-card-content>
+    </ion-card>
+    <ion-card>
+      <ion-card-content>
+        <canvas id="pie"></canvas>
+      </ion-card-content>
+    </ion-card>
+
+
+</ion-content>

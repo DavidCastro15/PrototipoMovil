@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+    <ion-item color="secondary">
+      <ion-title style="text-align: center  ">Agregar lampara</ion-title>
+    </ion-item>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-content>
+    <br>
+    <ion-card>
+      <ion-card class="car1">
+        <center>
+          <ion-icon style="height: 50px;width: 50px"  name="sunny-outline"></ion-icon>
+        </center>
+      </ion-card>
+
+      <form #form="ngForm" style="margin-top: 30px; margin-left: 20px;margin-right: 20px;" id="formulario">
+        <ion-item style="border-radius: 20px">
+          <ion-label position="floating">No. de lampara</ion-label>
+          <ion-input
+                  type="text"
+                  class="form-control"
+                  name="nlamp"
+                  id="nlamp"
+                  placeholder="No. de lampara"></ion-input>
+          <ion-icon style="margin-top: 40px" name="sunny-outline" slot="start"></ion-icon>
+        </ion-item>
+        <br>
+        <br>
+        <ion-button type="submit" shape="round" expand="block" routerLink="/conf-usuario" >Guardar</ion-button>
+        <br>
+        <ion-button shape="round" expand="block" (click)="salirSin()">Cancelar</ion-button>
+      </form>
+      <br>
+      <br>
+    </ion-card>
+  </ion-content>
+</ion-content>
+
+
+

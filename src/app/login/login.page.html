@@ -1,0 +1,52 @@
+<ion-content >
+
+<ion-card-content class="login">
+
+<ion-card>
+
+</ion-card>
+
+
+    <br>
+    <br>
+    <br>
+    <ion-list-header>
+
+        <ion-label style="align-items: center; margin: auto 13%;"><img src="assets/logo1.png"></ion-label>
+    </ion-list-header>
+    <br>
+    <br>
+    <ion-label>
+        <ion-item-group style="text-align: center;color: #1a1a1a;font-size: x-large;">Iniciar Sesión</ion-item-group>
+    </ion-label>
+    <form #form="ngForm" style="margin-top: 30px; margin-left: 20px;margin-right: 20px;" id="formulario">
+
+        <ion-item style="border-radius: 50px">
+            <ion-label position="floating" for="correo">Correo</ion-label>
+            <ion-input
+                    type="email"
+                    [(ngModel)]="correo"
+                    class="form-control"
+                    name="correo"
+                    id="correo"
+                    placeholder="ejemplo@gmail.com"></ion-input>
+        </ion-item>
+        <br>
+        <ion-item style="border-radius: 50px">
+            <ion-label position="floating" for="nombre">Contraseña</ion-label>
+            <ion-input
+                    type="password"
+                    [(ngModel)]="nombre"
+                    class="form-control"
+                    name="nombre"
+                    id="nombre"
+                    placeholder="Contraseña"></ion-input>
+        </ion-item>
+        <ion-button type="submit" shape="round" expand="block" routerLink="/tabs/inicio" style="margin-bottom: 20px; margin-top: 20px;" (click)="tipoUsuario(correo)">Iniciar Sesion</ion-button>
+        <ion-button type="submit" shape="round" expand="block" routerLink="/registrar" >Registrarse</ion-button>
+    </form>
+</ion-card-content>
+    <br>
+    <br>
+
+</ion-content>

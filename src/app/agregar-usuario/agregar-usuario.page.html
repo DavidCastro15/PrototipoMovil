@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-item>
+      <ion-icon id="user" name="person-circle-outline" slot="end" style="font-size: 50px;"></ion-icon>
+      <ion-title>Agregar Usuario</ion-title>
+    </ion-item>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card style="margin-top: 20px;">
+    <ion-card-content>
+      <ion-label>
+        Número de trabajador
+      </ion-label>
+      <ion-select placeholder="Seleccione un número de trabajador">
+        <ion-select-option>1</ion-select-option>
+        <ion-select-option>2</ion-select-option>
+        <ion-select-option>3</ion-select-option>
+      </ion-select>
+      <ion-label>
+        Nombre de trabajador
+      </ion-label>
+      <ion-input placeholder="Nombre completo"></ion-input>
+      <ion-label>
+        Descripción
+      </ion-label>
+      <ion-textarea rows="6" cols="20" placeholder="Descripción de lo que hará el usuario"></ion-textarea>
+    </ion-card-content>
+  </ion-card>
+  <div style="margin-top: 20px;">
+    <ion-button style="margin-left: 50px;" routerLink="/tabs/tab3">Aceptar</ion-button>
+    <ion-button style="float: right; margin-right: 50px;" routerLink="/tabs/tab3">Cancelar</ion-button>
+  </div>
+</ion-content>
