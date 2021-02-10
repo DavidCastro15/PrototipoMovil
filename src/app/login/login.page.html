@@ -29,20 +29,24 @@
                     class="form-control"
                     name="correo"
                     id="correo"
-                    placeholder="ejemplo@gmail.com"></ion-input>
+                    placeholder="ejemplo@gmail.com"
+                    required></ion-input>
+                    <!--pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}"-->
+
         </ion-item>
         <br>
         <ion-item style="border-radius: 50px">
-            <ion-label position="floating" for="nombre">Contraseña</ion-label>
+            <ion-label position="floating" for="password">Contraseña</ion-label>
             <ion-input
                     type="password"
                     [(ngModel)]="nombre"
                     class="form-control"
-                    name="nombre"
-                    id="nombre"
-                    placeholder="Contraseña"></ion-input>
+                    name="password"
+                    id="password"
+                    placeholder="Contraseña" required></ion-input>
         </ion-item>
-        <ion-button type="submit" shape="round" expand="block" routerLink="/tabs/inicio" style="margin-bottom: 20px; margin-top: 20px;" (click)="tipoUsuario(correo)">Iniciar Sesion</ion-button>
+        <ion-button type="submit" shape="round" expand="block" routerLink="/tabs/inicio" style="margin-bottom: 20px; margin-top: 20px;" (click)="tipoUsuario(correo)" >Iniciar Sesion</ion-button>
+        <!-- [disabled]="!form.form.valid"-->
         <ion-button type="submit" shape="round" expand="block" routerLink="/registrar" >Registrarse</ion-button>
     </form>
 </ion-card-content>

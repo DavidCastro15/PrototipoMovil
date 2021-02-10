@@ -2,10 +2,7 @@
   text-align: center;
 }
 
-body {
-  background-color: #f45b69;
 
-}
 
 .login {
   position: center;
@@ -65,4 +62,13 @@ body {
   to {
     -moz-transform: rotate(360deg);
   }
+}
+input:valid,
+textarea:valid {
+  background-color: green;
+}
+
+input:invalid,
+textarea:invalid {
+  background-color: red;
 }

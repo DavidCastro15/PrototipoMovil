@@ -5,7 +5,6 @@
 </ion-header>
 
 <ion-content>
-  <br>
   <ion-card class="centrado" >
     <ion-card >
     <ion-icon style="height: 50px;width: 50px;text-align: center"  name="person-circle-outline"></ion-icon>
@@ -13,50 +12,81 @@
 
     <form #form="ngForm" style="margin-top: 30px; margin-left: 20px;margin-right: 20px;" id="formulario">
       <ion-item style="border-radius: 20px">
-        <ion-label position="floating">Nombre Completo</ion-label>
+        <ion-label position="floating">Nombre</ion-label>
         <ion-input
                 type="text"
+                [(ngModel)]= "nombre"
+                name="nombre"
+                id="nombre"
+                placeholder="Nombre"
                 class="form-control"
-                name="nombrec"
-                id="nombrec"
-                placeholder="Nombre completo"></ion-input>
+                minlength="5" maxlength="20"
+                required>
+
+        </ion-input>
         <ion-icon style="margin-top: 40px" name="person-circle-outline" slot="start"></ion-icon>
       </ion-item>
-      <br>
+
+      <ion-item style="border-radius: 20px">
+        <ion-label position="floating">Apellido</ion-label>
+        <ion-input
+                type="text"
+                [(ngModel)]= "apellido"
+                name="apellido"
+                id="apellido"
+                placeholder="Apellido"
+                class="form-control"
+                minlength="5" maxlength="20"
+                required>
+
+        </ion-input>
+        <ion-icon style="margin-top: 40px" name="person-circle-outline" slot="start"></ion-icon>
+      </ion-item>
+
       <ion-item style="border-radius: 20px">
         <ion-label position="floating">Telefono</ion-label>
         <ion-input
                 type="tel"
+                [(ngModel)]= "telefono"
                 class="form-control"
                 name="telefono"
                 id="telefono"
-                placeholder="Telefono"></ion-input>
+                placeholder="Telefono"
+                pattern="^[1,2,3,4,5,6,7,8,9]\d{9}$"
+                required></ion-input>
         <ion-icon style="margin-top: 40px" name="call-outline" slot="start"></ion-icon>
       </ion-item>
-      <br>
+
       <ion-item style="border-radius: 20px">
         <ion-label position="floating">Correo</ion-label>
         <ion-input
                 type="email"
+                [(ngModel)]="correo"
                 class="form-control"
                 name="correo"
                 id="correo"
-                placeholder="Correo"></ion-input>
+                placeholder="ejemplo@gmail.com"
+                pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}"
+                required></ion-input>
         <ion-icon style="margin-top: 40px" name="mail-outline" slot="start"></ion-icon>
       </ion-item>
-      <br>
+
       <ion-item style="border-radius: 20px">
         <ion-label position="floating">Contraseña</ion-label>
         <ion-input
                 type="password"
-                class="form-control"
+                [(ngModel)]= "password"
                 name="password"
                 id="password"
-                placeholder="Contraseña"></ion-input>
+                placeholder="Contraseña"
+                required
+                minlength="8" maxlength="18" >
+
+        </ion-input>
         <ion-icon style="margin-top: 40px" name="lock-closed-outline" slot="start"></ion-icon>
       </ion-item>
       <br>
-      <ion-button type="submit" shape="round" expand="block" routerLink="/conf-usuario" >Guardar</ion-button>
+      <ion-button type="submit" shape="round" expand="block" routerLink="/conf-usuario"  [disabled]="!form.form.valid">Guardar</ion-button>
       <br>
       <ion-button type="submit" shape="round" expand="block" routerLink="/conf-usuario" >Cancelar</ion-button>
     </form>
